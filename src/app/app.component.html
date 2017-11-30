@@ -1,0 +1,26 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div class="container">
+    <div class="row">
+        <div class="col-xs-28">
+          <h1>This is an Angular js page</h1>
+ <hr>
+ <h2>Testsing component css</h2>
+
+ <!-- for using nf condition and looping statements -->
+ <button class="btn btn-primary" (click)="onToogle($event)">Add Details</button>
+ <p *ngIf="secret"> password = moshi</p>
+ <!-- counting index in the loop -->
+ <p *ngFor="let logid of log ; let indx = index"
+    [ngStyle]="{backgroundColor : indx >= 5 ? 'red' : 'blue'}"
+    [ngClass]="{'bcolor': indx >= 5 }" >{{logid}}</p>
+ <br>
+ <br>
+ <app-servers>  </app-servers>
+
+ 
+ 
+        </div>
+    </div>
+</div>
+  
+
